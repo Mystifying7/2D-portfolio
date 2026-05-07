@@ -11,6 +11,7 @@
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         body{
             background-color: rgb(0, 0, 33);
@@ -91,10 +92,33 @@
         .secondSection{
             max-width: 80vw;
             margin: auto;
+            height: 50vw;
+        }
+        .thirdSection{
+            max-width: 80vw;
+            margin: auto;
+            font-size: 18px;
         }
 
+        .thirdSection h1{
+            font-size: 2.5rem;
+            text-decoration: underline;
+        
+        }
+        .fourthSection h1{
+            font-size: 2.5rem;
+            text-decoration: underline;
+        
+        }
+        .fourthSection{
+            max-width: 80vw;
+            margin: auto;
+            font-size: 18px;
+        }
+        
         .secondSection h1{
-            font-size: 1.9rem;/
+            font-size: 2.5rem;
+            text-decoration: underline;
         }
 
         .secondSection .box{
@@ -104,7 +128,7 @@
             margin: 56px 0;
             display: flex;
         }
-
+        
         .secondSection .box .vertical{
             height: 93px;
             width: 1px;
@@ -123,14 +147,86 @@
             position: relative;
             top: 50px;
             width : 150px;
+            font-size: 20px;
         }
         .vertical-desc{
             position: relative;
             top: 56px;
             color: gray;
             width: 130px;
-            font-size: 9px;
+            font-size: 12px;
         }
+
+        footer{
+            background-color: #0e0e1a;
+            height: 150px;
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .EB ul{
+            list-style: none;
+        }
+
+        .Education1:hover{
+             color: rgb(81, 248, 173);
+            font-size: 1.1rem;
+        }
+        .Education2:hover{
+             color: rgb(196, 238, 91);
+            font-size: 1.1rem;
+        }
+        .Education3:hover{
+             color: rgb(242, 76, 175);
+            font-size: 1.1rem;
+        }
+
+.skill-card{
+      border: 2px solid #bdbdbd;
+      border-radius: 15px;
+      padding: 30px;
+      min-height: 320px;
+
+      transition: 0.3s ease;
+    }
+
+    .skill-card:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    .skill-card h2{
+      font-size: 22px;
+      margin-bottom: 25px;
+      text-decoration: underline;
+    }
+
+    .skill-card ul{
+      padding-left: 25px;
+    }
+
+    .skill-card li{
+      font-size: 18px;
+      margin-bottom: 14px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .skills-container{
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 30px;
+    }
 
     </style>
 </head>
@@ -165,6 +261,66 @@
 
 <hr>
 
+        <section class="thirdSection">
+            <h1>About me</h1>
+            <br>
+            <div class="box">
+                    <div class="about-desc">
+                        <div>I’m a Computer Science student focused on Artificial Intelligence and Machine Learning, building my skills through practical projects, problem-solving, and continuous learning.</div>
+                        <br>
+                        <div>My main interests are AI systems, machine learning fundamentals, and software development. I work with Python, Java, and modern web technologies while exploring how intelligent systems can solve real-world problems.</div>
+                        <br>
+                        <div>Rather than only studying theory, I focus on building and experimenting — from coding projects and algorithms to learning how AI models work behind the scenes.</div>
+                        <br>
+                        <div>Currently, I’m improving my understanding of:</div>
+                        <div>Machine Learning fundamentals</div>
+                        <div>Data Structures & Algorithms</div>
+                        <div>Python development</div>
+                        <div>AI-based project building</div>
+                        <div>Frontend development with React</div>
+                        <br>
+                        <div>My goal is to become an AI Engineer and build systems that combine intelligence, creativity, and practical impact.</div>
+                    </div>
+                    <br><br>
+                    <h1>Education</h1>
+                    <div class="EB">
+                        <ul >
+                            <li class = "Education1"><details><i>Currently pusuing B.TECH CSE at Swami Vivekananda University Barrackpore, West Bengal, India. <br> Previous academic scores : <br>
+                                1st Sem : 8.80 CGPA <br>
+                                2nd Sem : 9.07 CGPA <br>
+                                3rd Sem : 8.75 CGPA
+                            </i><summary> <b> B.TECH CSE (4th Sem)</b></summary></details></li>
+                            <li class = "Education2"><details><i>Completed 12th grade with 64% marks from Kendriya Vidyalaya Godda, Jharkhand, India.</i><summary> <b> Higher Secondary Education</b></summary></details></li>
+                            <li class = "Education3"><details><i>Completed 10th grade with 77% marks from Kendriya Vidyalaya Singsrsi, Jharkhand, India.</i><summary> <b> Secondary Education</b></summary></details></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+<hr>
+        <section class="fourthSection">
+            <h1>Skills</h1><br>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <br><h2>Web Development</h2>
+                        <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript (Basics)</li>
+                        <li>React (Basics)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <br><h2>AI Development</h2>
+                        <ul>
+                        <li>Python</li>
+                        <li>DSA</li>
+                        <li>Java</li>
+                        <li>Machine Learning (Basics)</li>
+                    </ul>
+                </div>
+        </section>
+<hr>
         <section class="secondSection">
             <span class="text-grey"> What I have done so far </span>
             <h1>Work Experience</h1>
@@ -172,7 +328,7 @@
             <!-- Experience 1st -->
             <div class="box">
                 <div class="vertical">
-                    <img class ="image-top" src="bg.webp" alt="Error">
+                    <img class ="image-top" src="Creative.png" alt="Error">
                     <div class="vertical-title">
                         Fresher Now 
                     </div>
@@ -261,6 +417,28 @@
 
         </section>
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                    <h3></h3>
+                </div> 
+                <div class="footer-second">
+                    <ul>
+                        <li>XP02 Profile</li>
+                        <li>Binit Profile</li>
+                    </ul>
+
+            </div> 
+            <div class="footer-third">
+
+            </div> 
+            <div class="footer-fourth">
+
+            </div> 
+        </div>
+    </footer>
+    
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
